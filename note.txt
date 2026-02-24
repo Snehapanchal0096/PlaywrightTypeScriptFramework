@@ -1,0 +1,34 @@
+# Playwright TypeScript Framework
+
+## Project Setup
+- ✓ Playwright installed with TypeScript support
+- ✓ dotenv package installed for environment variables
+- ✓ cross-env installed for multiple environment handling
+
+## Project Structure
+```
+📁 pages/          → Page Object Models
+📁 fixtures/       → Test fixtures and custom hooks
+📁 tests/          → Test specifications
+📄 playwright.config.ts  → Playwright configuration
+```
+
+## Key Components
+- **LoginPage**: Page Object Model with fixture support in pom-fixture.ts
+
+## Environment Setup
+### Installed Dependencies
+```bash
+npm i dotenv
+npm i cross-env
+```
+
+### Environment Configuration
+Use dotenv to manage multiple environments (dev, staging, prod)
+
+### for data encryption and decryption
+npm i crypto-js 
+
+SECRET_KEY=demo npm run test_demo_cr_hd
+SECRET_KEY=demo npm run test_demo_ui
+SECRET_KEY=demo npm run test_dev_cr_hd
