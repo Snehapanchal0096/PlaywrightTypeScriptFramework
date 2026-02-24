@@ -32,3 +32,5 @@ npm i crypto-js
 SECRET_KEY=demo npm run test_demo_cr_hd
 SECRET_KEY=demo npm run test_demo_ui
 SECRET_KEY=demo npm run test_dev_cr_hd
+SECRET_KEY=demo npm run test_demo_cr_hd_vi
+SECRET_KEY=demo npm run test_demo_cr_hd_lf
