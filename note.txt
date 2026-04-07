@@ -34,3 +34,12 @@ SECRET_KEY=demo npm run test_demo_ui
 SECRET_KEY=demo npm run test_dev_cr_hd
 SECRET_KEY=demo npm run test_demo_cr_hd_vi
 SECRET_KEY=demo npm run test_demo_cr_hd_lf
+
+SECRET_KEY=demo npm run test_api_demo
+$env:SECRET_KEY="demo"; npm run test_api_demo
+
+SECRET_KEY=demo npm run test_demo_ui  ---open the execution window
+
+winget list 
+winget upgrade appname
+winget upgrade Google.Antigravity
