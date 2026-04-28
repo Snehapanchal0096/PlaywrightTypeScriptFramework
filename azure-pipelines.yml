@@ -17,8 +17,8 @@ steps:
 - script: npm ci 
   displayName: 'Install Playwrite Dependencies'
 
-- script: npx playwrite install --with-deps
-  displayName: 'Install Playwrite Browsers'
+- script: npx playwright install --with-deps
+  displayName: 'Install Playwright Browsers'
 
 - script: SECRET_KEY=demo npm run test_demo
   displayName: 'Run Tests'
