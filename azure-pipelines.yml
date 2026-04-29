@@ -20,7 +20,7 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright Browsers'
 
-- script: SECRET_KEY=$(SECRET_KEY_VAL) npm run test_demo
+- script: SECRET_KEY=$(SECRET_KEY_VAL) npm run $(SCRIPT_KEY_VAL)
   displayName: 'Run Tests'
 
 
