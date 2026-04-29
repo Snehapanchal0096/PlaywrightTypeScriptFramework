@@ -46,7 +46,7 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**./test-results/junit-report.xml'
+    testResultsFiles: '**test-results/junit-report.xml'
     testRunTitle: 'Playwright Junit Report'
   condition: always()  
 
