@@ -9,6 +9,16 @@ trigger:
 pool:
   vmImage: ubuntu-latest #windows-latest #macos-latest
 
+parameters:
+  - name: SCRIPT_KEY_VAL2
+    displayName: 'Select Script Key' 
+    type: string
+    default: 'test_demo_ui_cr_hl_api_novisual'
+    values:
+      - 'test_demo_ui_cr_hl_api_novisual'
+      - 'test_demo'
+      - 'test_demo_api'
+
 steps:
 - task: UseNode@1
   inputs:
@@ -20,7 +30,8 @@ steps:
 - script: npx playwright install --with-deps
   displayName: 'Install Playwright Browsers'
 
-- script: SECRET_KEY=$(SECRET_KEY_VAL) npm run $(SCRIPT_KEY_VAL)
+#- script: SECRET_KEY=$(SECRET_KEY_VAL) npm run $(SCRIPT_KEY_VAL)
+- script: SECRET_KEY=$(SECRET_KEY_VAL) npm run ${{parameters.SCRIPT_KEY_VAL2}}
   displayName: 'Run Tests'
 
 
