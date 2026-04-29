@@ -18,6 +18,7 @@ parameters:
       - 'test_demo_ui_cr_hl_api_novisual'
       - 'test_demo'
       - 'test_demo_api'
+      - 'test_demo_ui_cr_hd_api'
 
 steps:
 - task: UseNode@1
